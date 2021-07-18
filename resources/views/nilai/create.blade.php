@@ -17,7 +17,7 @@
                                 <div class="col">
                                     <label for="">Nama Mahasiswa</label>
                                 <select name="mahasiswa_id" id="mahasiswa_id" class="form-control">
-                                    <option value="" disabled selected>--Pilih Nama--</option>
+                                    <option value="" disabled selected>--Pilih Nama Mahasiswa--</option>
                                     @foreach ($mahasiswa as $mhs)
                                         <option value="{{ $mhs->id }}">{{$mhs->user->name}}</option>
                                     @endforeach                
@@ -33,7 +33,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col">
+                                <div class="col">
                                     <label for="nilai">Nilai</label>
                                     <input type="number" name="nilai" class="form-control" placeholder="Tambahkan Nilai" > 
                                 </div>  

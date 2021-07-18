@@ -25,7 +25,7 @@
                                 </select>
                             </div>
 
-                                <div class="row">
+                                <div class="col">
                                     <label for="makul">Nama Mata Kuliah</label>
                                 <select name="makul_id" id="makul_id" class="form-control">
                                     <option value="" disabled selected>--pilih Nama Mata Kuliah--</option>
@@ -34,13 +34,15 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="row">
+                            
+                            <div class="col">
                                 <label for="nilai">Nilai</label>
                                 <input type="number" name="nilai" class="form-control" placeholder="Tambahkan nilai" value="{{is_null($nilai) ? '' : $nilai->nilai}}"> 
                             </div>
+                            </div>
                             <br>
-                        </div>
 
+                        <div>
                         <div class="form group">
                             <div class="form row float-right">
                                 <div class="col">
@@ -48,6 +50,7 @@
                                     <a href="{{ route('nilai') }}" class="btn btn-md btn-danger">Batal</a>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </form>
                 </div>
